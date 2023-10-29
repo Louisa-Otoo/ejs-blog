@@ -1,0 +1,287 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top {
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(248, 243, 248);
+}
+
+.logo img {
+    width: 7rem;
+    height: 5rem;
+    padding: 0 1rem;
+    mix-blend-mode: darken;
+}
+
+.links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 16rem;
+}
+
+.links li { 
+    margin-bottom: 10px; 
+    font-size: 16px; 
+    color: #333; 
+}
+
+/* Style the icons */
+.links li span.material-symbols-outlined {
+    font-size: 2rem; 
+    margin-right: 1rem; 
+}
+
+.profile_log {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 1rem;
+}
+
+.icons span.material-symbols-outlined  {
+    font-size: 1.7rem;
+    margin-left: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.profile img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    margin-left: 0.7rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.side_panel {    
+    /* width: 18rem; */
+    /* background-color: rgb(226, 242, 198); */
+    background-color: rgb(248, 230, 248);
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    height: 87vh;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.side_panel ul li {
+    list-style: none; 
+    margin-bottom: 1.2rem; 
+    font-size: 1.2rem; 
+  }
+
+  /* Style the icons */
+.side_panel ul li span.material-symbols-outlined {
+    font-size: 2rem; 
+    margin-right: 3rem; 
+  }
+
+  /* Style the text content */
+.side_panel ul li {
+    display: flex; /* Display items in a row */
+    align-items: center; /* Center items vertically */
+    /* color: #333; Set text color */
+  }
+
+.main_content {
+    /* height: 85vh; */
+    width: 100%;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    /* border: 2px solid saddlebrown; */
+    background-color: rgb(248, 230, 248);
+}
+
+.new_comment {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.04rem;
+    justify-content: start;
+    width: 100%;
+    position: relative;
+}
+
+.new_comment input {
+    height: 5rem;
+    width: 100%;
+    border-top-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    padding: 1rem;
+}
+
+.new_comment input::placeholder {
+    font-size: 1.4rem;
+    color: gray;
+}
+
+.new_comment .post_btn {
+    display: inline-block;
+    background-color: rgb(120, 107, 132);
+    color: white;
+    padding: 0.5rem 0.7rem;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    text-decoration: none;
+    margin: 1rem 0;
+    height: 2.5rem;
+    width: 5rem;
+    font-size: 1rem;
+    position: absolute;
+    right: 0;
+    top: 4.5rem;
+    cursor: pointer;
+}
+
+.comments {
+    border: 1px solid grey;
+    margin-top: 7rem;
+    padding: 0 1rem;
+    border-radius: 1rem;
+}
+
+header {
+    display: flex;
+    padding: 0.5rem 0.9rem;
+    /* border: 2px solid violet; */
+}
+
+header .profile_icon img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin-top: 0;
+}
+
+header .profile {
+    margin-left: 1rem;
+}
+
+.content {
+    /* border: 2px solid red; */
+    padding: 0;
+}
+
+.article {
+    border: 1px solid gray;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.msg {
+    padding: 0 2rem;
+}
+
+.author {
+    padding: 0.5rem 1rem;
+    border: 1px solid grey;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.author div {
+    display: flex;
+}
+
+.author img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+.username {
+    width: 4rem;
+    /* margin-left: 1rem; */
+    padding: 0.5rem 1rem;
+}
+
+.comment {
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    margin-top: 0.7rem;
+}
+.right {
+    /* border: 3px solid indigo; */
+    height: 87vh;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    background-color: rgb(248, 230, 248);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h3, p, small {
+    margin: 1rem 0;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+.small {
+    font-size: 14px;
+    color: #888;
+}
+
+.invitation-item, .contact-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.header {
+    border-bottom: 1px solid grey;
+
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.invitations {
+    border-bottom: 1px solid gray;
+
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+.invitations img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+button.accept_btn, button.delete_btn {
+    background-color: #00a400;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+button.delete_btn {
+    background-color: #d93025;
+}
+
+.contacts img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}

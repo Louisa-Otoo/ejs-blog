@@ -1,0 +1,99 @@
+
+<link rel="stylesheet" href="css/styles.css">
+
+
+<%- include('../layouts/navbar') %>
+
+<div class="wrapper">
+    <div class="sidebar">
+   
+        <%- include('../layouts/sidebar') %>
+        
+    </div>
+
+
+    <div class="main_content">
+        <div class="new_comment">
+            <input type="text" placeholder="Post new comment ...">
+            <button class="post_btn" type="button">Post</button>
+        </div>
+
+        <div class="comments">
+            <header>
+                <div class="profile_icon">
+                    <img src="./assets/profile-pic.jpg">
+                </div>
+                <div class="profile">
+                    <h2>Lorena</h2>
+                    <small>Ireland</small>
+                </div>        
+            </header>
+            <!-- <hr class="text-white"> -->
+            <div class="content">
+                <div class="article">
+                    <h3 class="title">Post Title</h3>
+                    <p class="time">Posted on October 25, 2023 by John Doe</p>
+                    <p class="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptate eligendi vitae quam enim ipsum dolore?</p>
+                </div>
+
+                <div class="recent_posts">
+                    <div class="author">
+                        <div>
+                            <img src="./assets/profile-pic.jpg" class="flex">
+                            <div class="username">Lorena</div>
+                        </div>
+
+                        <div class="comment">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, recusandae!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+  
+    <aside>
+        <div class="right">
+
+            <div class="header">
+                <h3>Your pages</h3>
+                <p>Developers</p>
+                <small>5 messages</small>
+                <small>Switch into page</small>
+            </div>
+
+            <div class="invitations">
+                <h3>Friend invitations</h3>
+                <div class="invitation-item">
+                    <img src="./assets/profile-pic.jpg">
+                    <p>Richard Turkson</p>
+                </div>
+                <div>
+                    <button class="accept_btn">Accept</button>
+                    <button class="delete_btn">Delete</button>
+                </div>    
+            </div>
+
+            <div class="contacts">
+                <h3>contacts</h3>
+                <div class="contact-item">
+                    <img src="./assets/profile-pic.jpg">
+                    <p>Josiah Thompson</p>
+                </div>
+                <div class="contact-item">
+                    <img src="./assets/profile-pic.jpg">
+                    <p>Marian Dadzie</p>
+                </div>
+                <div class="contact-item">
+                    <img src="./assets/profile-pic.jpg">
+                    <p>Marian Dadzie</p>
+                </div>
+                <div class="contact-item">
+                    <img src="./assets/profile-pic.jpg">
+                    <p>Marian Dadzie</p>
+                </div>
+            </div>  
+        </div>
+    </aside>
+</div>
